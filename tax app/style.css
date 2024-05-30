@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap');
+
+:root {
+  --colorBackground: green;
+  --colorText: white;
+  --colorTextDim: ;
+  --colorPrimary: ;
+  --colorPrimaryShade: ;
+  --colorPrimaryGradient: ;
+  --colorSecondary: ;
+  --colorSecondaryShade: ;
+  --colorAccent: ;
+  --colorError: ;
+  --colorSuccess: ;
+  --textTitle: 24px;
+  --textBody: 18px;
+  --textSmall: 14px;
+  --fontPrimary: "El Messiri", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--fontPrimary);
+  color: text;
+}
+
+body {
+  font-size: var(--textBody);
+}
+
+.container {
+  background-color: var(--colorBackground);
+  width: 400px;
+  height: 400px;
+  padding: 10px;
+}
+
+h1 {
+  font-size: var(--textTitle);
+  text-align: center;
+
+}
+
+hr {
+  color: var(--colorSecondary);
+  margin: 10px auto;
+}
+
+.inputBox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inputBox .right {
+  margin-left: 10px;
+}
+
+label {
+  margin-left: 5px;
+}
+
+.inputBox input {
+  width: 120px;
+  padding: 2px 5px;
+  border: none;
+  border-radius: 3px;
+}
+
+.inputBox .left input {
+  width: 50px;
+  text-align: center;
+}
+
+.btnBox {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px auto;
+}
+
+button {
+  width: 120PX;
+  height: 36PX;
+  padding: 5px;
+
+  font-size: var(--textSmall);
+
+}
+button:hover{
+  cursor: pointer;
+}
+/* Remove the arrows from a specific input */
+#vat-el[type="number"] {
+  -moz-appearance: textfield;
+}
+
+#vat-el::-webkit-outer-spin-button,
+#vat-el::-webkit-inner-spin-button {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
