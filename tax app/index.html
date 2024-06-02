@@ -1,37 +1,56 @@
 <!DOCTYPE html>
 <html dir="rtl" lang="ar">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
 
-    <title>Tax App</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
 
-  <body>
-    <div class="container">
+  <title>Tax App</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
       <h1 class="textTiltle">مساعد المحاسب</h1>
-      <hr />
-      <div class="inputBox">
-        <div class="right">
-          <label for="numIn-el">المبلغ</label>
+    </header>
+ 
+    <section class="inputBox">
+      <div class="right">
+        <label for="numIn-el">المبلغ</label>
+        <input type="number" id="numIn-el" value="0" />
+      </div>
 
-          <input type="number" id="numIn-el" value="0" />
-        </div>
+
         <div class="left">
           <label for="numIn-el">نسبة الضريبة</label>
           <input type="number" id="vat-el" value="14" inputmode="numeric" />
           <span>%</span>
         </div>
-      </div>
-      <div class="btnBox">
-        <button id="numVatBtn-el">حساب الضريبة</button>
-        <button id="vatNumBtn-el">حساب أصل المبلغ</button>
-      </div>
-      <div>
-        <p id="numOut-el"></p>
-      </div>
+
+
+    </section>
+    <fieldset>
+      <legend>هل المبلغ شامل ضريبة القيمة المضافة؟</legend>
+      <input id="y-el" name="yn" type="radio" value="y" checked>
+      <label for="y-el">نعم</label>
+      <input id="n-el" name="yn" type="radio" value="n">
+      <label for="n-el">لا</label>
+    </fieldset>
+
+    <div>
+
+
     </div>
-  </body>
+    <div class="btnBox">
+      <button id="submitBtn-el">حساب الضريبة</button>
+
+    </div>
+    <div>
+      <p id="numOut-el"></p>
+    </div>
+  </div>
+</body>
+
 </html>
 <script src="script.js"></script>

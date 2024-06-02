@@ -1,0 +1,9 @@
+{
+    "manifest_version": 3,
+    "version": "0",
+    "name": "Tax App",
+    "action": {
+        "default_popup": "index.html"
+ 
+    }
+}
